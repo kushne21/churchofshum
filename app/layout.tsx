@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Navbar from "./Components/navbar";
+import Shumline from "./Components/shumline";
+import Footer from "./Components/footer";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -23,7 +27,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+    
+        
+        <body className="flex min-h-screen flex-col ml-10 mr-10 mt-10">
+          <Navbar></Navbar>
+          <div className="flex grow flex-row ">
+            {children}
+            <div className="ml-auto">
+              <Shumline></Shumline>
+            </div>
+          </div>
+          <Footer></Footer>
+        
+        
+        </body>
     </html>
   );
 }
