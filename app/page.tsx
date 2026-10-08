@@ -3,20 +3,16 @@ import Navbar from "./Components/navbar";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-box p-5">
       <main className="">
-        
-        <p>Welcome to the Church of Shum</p>
-        <Image
-          className="dark:invert hover:bg-cyan-300 "
-          src="/shumHIMSELF.png"
-          alt="image of the Shum"
-          width={100}
-          height={200}
-          priority
-        />
-        
-        
+        <h1 className="text-2xl mb-2">Who we are</h1>
+        <hr></hr>
+        <h2 className="mt-2">We are the Church of Shum.</h2>
+        <h2>We celebrate and worship Shum.</h2>
+        <h2>We love Shum. Shum loves us.</h2>
+        <h2>Shum loves you.</h2>
+        <br></br>
+        <h2>Join us.</h2>
         
       </main>
     </div>

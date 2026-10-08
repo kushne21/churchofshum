@@ -31,9 +31,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         
         <body className="flex min-h-screen flex-col ml-10 mr-10 mt-10">
           <Navbar></Navbar>
-          <div className="flex grow flex-row ">
-            {children}
-            <div className="ml-auto">
+          <div className="flex grow flex-row  pb-5">
+            <div className="w-full">
+              {children}
+            </div>
+            <div className="pl-5 ml-auto">
               <Shumline></Shumline>
             </div>
           </div>
