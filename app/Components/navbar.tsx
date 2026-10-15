@@ -1,15 +1,16 @@
 import Image from "next/image";
+import { InputBox } from "./boxes";
 
 export default function Navbar() {
   return (
     <div className=" mb-10">
         <nav className="flex flex-row bg-box p-2 mb-2 ">
-        <h1 className="text-5xl">Church of Shum</h1>
+        <a href="./"><h1 className="text-5xl">Church of Shum</h1></a>
         <div className="ml-auto flex gap-2 justify-center items-center text-xl">
             <a href="./"><img src="home_icon.svg" alt="Home"></img></a>
-            <a href="./">Login</a>
+            <a href="./Login">Login</a>
             <a href="./FAQ">FAQ</a>
-            <a href="./">Search</a>
+            Search
         </div>
         
         </nav>
