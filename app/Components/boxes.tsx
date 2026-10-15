@@ -27,7 +27,7 @@ export function InputBox({labelstr, str, atype="text"} : InputProps) {
 
 export function ButtonBox({ type = 'submit', className,children, ...props }: BoxProps) {
     return(
-        <button type={type} className={cn("bg-foreground text-white text-center justify-center rounded-2xl w-1/4 p-2 mt-4 mb-4",
+        <button type={type} className={cn("cursor-pointer bg-foreground text-white text-center justify-center rounded-2xl w-1/4 p-2 mt-4 mb-4",
          className)}>
             {children}
         </button>
