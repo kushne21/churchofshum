@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./Components/navbar";
 import Shumline from "./Components/shumline";
 import Footer from "./Components/footer";
+
 
 import "./globals.css";
 
@@ -20,6 +21,10 @@ export const metadata: Metadata = {
   title: "Church of Shum",
   description: "made with nextjs",
 };
+
+export const viewport: Viewport = {
+  colorScheme: 'only light', 
+}
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
