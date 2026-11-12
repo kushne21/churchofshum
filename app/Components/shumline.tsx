@@ -32,7 +32,7 @@ export function PageHeightTracker() {
   return pageHeight;
 }
 
-
+//todo : have it resize also account for changes in shums width
 export default function Shumline() {
   PageHeightTracker()
   return (

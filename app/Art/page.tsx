@@ -14,7 +14,7 @@ export function Shmart(num: number){
   return(
     <div>
       <Image
-          className="dark:invert hover:bg-cyan-300 "
+          className=" hover:bg-cyan-300 "
           src={str}
           alt="image of the Shum"
           width={130}
