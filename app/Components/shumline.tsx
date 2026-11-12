@@ -4,7 +4,7 @@ export default function Shumline() {
   return (
     <div className="bg-box flex-col">
         <Image
-                  className="dark:invert hover:bg-cyan-300 "
+                  className=" hover:bg-cyan-300 "
                   src="/shumHIMSELF.png"
                   alt="image of the Shum"
                   width={100}
@@ -12,7 +12,7 @@ export default function Shumline() {
                   priority
                 />
           <Image
-                  className="dark:invert hover:bg-cyan-300 "
+                  className=" hover:bg-cyan-300 "
                   src="/shumHIMSELF.png"
                   alt="image of the Shum"
                   width={100}
